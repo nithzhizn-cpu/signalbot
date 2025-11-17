@@ -13,6 +13,7 @@ class User(Base):
     token = Column(String, unique=True, index=True)
     pubkey = Column(String, nullable=True)
 
+
 class Message(Base):
     tablename = "messages"
 
